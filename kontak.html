@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kontak Kami</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(160, 16, 173);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Form styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* Maps styling */
+iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Kontak Kami</h1>
+    <p>Silakan hubungi kami atau kunjungi toko kami</p>
+</div>
+
+<div class="container">
+
+    <h2>Alamat Toko</h2>
+    <p>Jl. Merdeka No.123, Pusat Kota, Indonesia</p>
+    <p>Telepon: 085974035860</p>
+    <p>Email: info@tokobukuy&q.com</p>
+
+    <!-- Google Maps -->
+    <iframe 
+        src="https://www.google.com/maps?q=Jl.+Merdeka+No.123,+Pusat+Kota&output=embed" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+
+    <hr>
+
+    <h2>Form Kontak</h2>
+    <form>
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <textarea rows="4" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+
+</div>
+
+</body>
+</html>
